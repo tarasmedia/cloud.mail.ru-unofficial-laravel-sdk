@@ -1,0 +1,38 @@
+{
+  "name": "tarasmedia/cloud.mail.ru-unofficial-laravel-sdk",
+  "description": "Unofficial sdk for cloud.mail.ru",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Taras G",
+      "email": "gt@taras.media"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "UAM\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "UAM\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "ext-mbstring": "*",
+    "ext-curl": "*",
+    "ext-xml": "*",
+    "symfony/console": "^3.0",
+    "guzzlehttp/guzzle": "^6.1",
+    "psr/log": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.2",
+    "vlucas/phpdotenv": "^2.2"
+  }
+}
